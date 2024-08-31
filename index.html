@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Booking</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            padding: 10px 20px;
+        }
+        .navbar .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+        }
+        .navbar .menu {
+            display: flex;
+            gap: 15px;
+            margin: 0 auto;
+        }
+        .navbar .menu a {
+            color: white;
+            text-decoration: none;
+            font-size: 17px;
+        }
+        .navbar .menu a:hover {
+            background-color: #ddd;
+            color: black;
+            padding: 14px 20px;
+        }
+        .navbar .auth {
+            display: flex;
+            gap: 10px;
+        }
+        .navbar button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 14px 20px;
+            text-align: center;
+            font-size: 17px;
+            cursor: pointer;
+        }
+        .navbar button:hover {
+            background-color: #ddd;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <a href="#" class="logo">TravelBook</a>
+        <div class="menu">
+            <a href="#">Flights</a>
+            <a href="#">Hotel</a>
+            <a href="#">Train</a>
+            <a href="#">Cabs</a>
+        </div>
+        <div class="auth">
+            <button onclick="window.location.href='#'">Login</button>
+            <button onclick="window.location.href='#'">Sign Up</button>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Travel Booking</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        
+        
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #f4f4f4;
+            overflow: hidden;
+            padding: 10px 20px;
+        }
+        .navbar a, .navbar button {
+            float: left;
+            display: block;
+            
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+        .navbar a:hover, .navbar button:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .navbar .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .navbar .menu {
+            float: left;
+            margin-left: 20px;
+        
+        }
+        .navbar .menu a {
+            margin-right: 15px;
+        }
+        .navbar .auth {
+            float: right;
+        }
+        .navbar button {
+            background-color: #4CAF50;
+            border: none;
+            cursor: pointer;
+        }
+        .container {
+            max-width: 500px;
+            margin: 80px auto;
+            background: rgb(189, 220, 222);
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .container h2 {
+            margin-bottom: 20px;
+            font-size: 28px;
+        }
+        .container p {
+            font-size: 18px;
+            color: #666;
+        }
+        .container input[type="text"], .container input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0 20px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        .container button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+        .container button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="./flight.html" class="logo">TravelBook</a>
+        <div class="menu">
+            <a href="./flight.html"><i class="fas fa-plane"></i> Flights</a>
+            <a href="./hotel.html"><i class="fas fa-hotel"></i> Hotel</a>
+            <a href="./train.html"><i class="fas fa-train"></i> Train</a>
+            <a href="./cab.html"><i class="fas fa-taxi"></i> Cabs</a>
+        </div>
+        <div class="auth">
+            <button onclick="window.location.href='./login.html'"><i class="fas fa-sign-in-alt"></i> Login</button>
+            <button onclick="window.location.href='./signup.html'"><i class="fas fa-user-plus"></i> Sign Up</button>
+        </div>
+    </div>
+
+
+    <!-- Login Container -->
+    <div class="container">
+        <h2>Welcome Back</h2>
+        <p>TRAVEL today, tomorrow, and beyond.</p>
+        <form action="#">
+            <input type="text" placeholder="Enter Username" name="username" required>
+            <input type="password" placeholder="Enter Password" name="password" required>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+</body>
+</html>
